@@ -93,19 +93,19 @@ const gameOver = (playerOptions,movesLeft) => {
   movesLeft.style.display = 'none';
 
   if(playerScore > computerScore){
-    result.style.fontSize = '2rem';
+    result.style.fontSize = '30px';
     result.innerText = 'You Won The Game'
-    result.style.color = '#308D46';
+    result.style.color = 'yellow';
   }
   else if(playerScore < computerScore){
-    result.style.fontSize = '2rem';
+    result.style.fontSize = '30px';
     result.innerText = 'You Lost The Game';
     result.style.color = 'red';
   }
   else{
-    result.style.fontSize = '2rem';
+    result.style.fontSize = '30px';
     result.innerText = 'Tie';
-    result.style.color = 'grey'
+    result.style.color = 'blue'
   }
     reloadBtn.innerText = 'Restart';
     reloadBtn.style.display = 'flex'
